@@ -28,9 +28,25 @@
 
 }
 
+// common logo style:
+.csiro50px, .csiro60px, .csiro70px {
+    .logo {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
 // need to over-ride some definitions around the height:
 .csiro50px {
     @navbarHeight: 50px;
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        background-image: url(../img/CSIRO_Grad_50px.jpg);
+    }
 
     .navbar-inner {
         background-position: right top;
@@ -80,6 +96,12 @@
     @navbarHeight: 60px;
     font-size: 14px;
 
+    .logo {
+        height: 60px;
+        width: 60px;
+        background-image: url(../img/CSIRO_Grad_60px.jpg);
+    }
+
     .navbar-inner {
         background-position: right top;
         background-repeat: no-repeat;
@@ -127,6 +149,12 @@
 .csiro70px {
     @navbarHeight: 70px;
     font-size: 16px;
+
+    .logo {
+        height: 70px;
+        width: 70px;
+        background-image: url(../img/CSIRO_Grad_70px.jpg);
+    }
 
     .navbar-inner {
         background-position: right top;
