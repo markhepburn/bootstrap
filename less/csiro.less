@@ -1,4 +1,173 @@
 // csiro.less
 // Classes and variables specific to CSIRO template
 
+.navbar-inner {
+  background-position: right top;
+  background-repeat: no-repeat;
 
+  // 50px high banner
+  &.csiro50px {
+    min-height: 50px;
+    background-image: url(../img/50px_csiro_mast_transparent.gif);
+    .container {
+        min-height: 50px;
+    }
+  }
+
+  // 60px high banner
+  &.csiro60px {
+    min-height: 50px;
+    background-image: url(../img/60px_csiro_mast_transparent.gif);
+  }
+
+  // 70px high banner
+  &.csiro70px {
+    min-height: 50px;
+    background-image: url(../img/70px_csiro_mast_transparent.gif);
+  }
+
+}
+
+// need to over-ride some definitions around the height:
+.csiro50px {
+    @navbarHeight: 50px;
+
+    .navbar-inner {
+        background-position: right top;
+        background-repeat: no-repeat;
+        min-height: @navbarHeight;
+        background-image: url(../img/50px_csiro_mast_transparent.gif);
+    }
+
+    &.navbar {
+        .brand {
+            @elementHeight: 25px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
+            font-size: 25px;
+        }
+
+        // Plain text in topbar
+        .navbar-text {
+            line-height: @navbarHeight;
+        }
+
+        .nav > li > a {
+            // Vertically center the text given @navbarHeight
+            @elementHeight: 25px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 1) 10px ((@navbarHeight - @elementHeight) / 2 + 1);
+            line-height: 25px;
+        }
+
+        .btn {
+            // Vertically center the button given @navbarHeight
+            @elementHeight: 28px;
+            margin: ((@navbarHeight - @elementHeight) / 2 - 1) 5px ((@navbarHeight - @elementHeight) / 2);
+        }
+
+        .btn-group {
+            // Vertically center the button given @navbarHeight
+            @elementHeight: 28px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 1) 5px ((@navbarHeight - @elementHeight) / 2);
+        }
+
+        .divider-vertical {
+            height: @navbarHeight;
+        }
+    }
+}
+
+.csiro60px {
+    @navbarHeight: 60px;
+    font-size: 14px;
+
+    .navbar-inner {
+        background-position: right top;
+        background-repeat: no-repeat;
+        min-height: @navbarHeight;
+        background-image: url(../img/50px_csiro_mast_transparent.gif);
+    }
+
+    &.navbar {
+        .brand {
+            @elementHeight: 30px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
+            font-size: 30px;
+        }
+
+        // Plain text in topbar
+        .navbar-text {
+            line-height: @navbarHeight;
+        }
+
+        .nav > li > a {
+            // Vertically center the text given @navbarHeight
+            @elementHeight: 30px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 1) 10px ((@navbarHeight - @elementHeight) / 2 + 1);
+            line-height: 30px;
+        }
+
+        .btn {
+            // Vertically center the button given @navbarHeight
+            @elementHeight: 28px;
+            margin: ((@navbarHeight - @elementHeight) / 2 - 1) 5px ((@navbarHeight - @elementHeight) / 2);
+        }
+
+        .btn-group {
+            // Vertically center the button given @navbarHeight
+            @elementHeight: 28px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 1) 5px ((@navbarHeight - @elementHeight) / 2);
+        }
+
+        .divider-vertical {
+            height: @navbarHeight;
+        }
+    }
+}
+
+.csiro70px {
+    @navbarHeight: 70px;
+    font-size: 16px;
+
+    .navbar-inner {
+        background-position: right top;
+        background-repeat: no-repeat;
+        min-height: @navbarHeight;
+        background-image: url(../img/50px_csiro_mast_transparent.gif);
+    }
+
+    &.navbar {
+        .brand {
+            @elementHeight: 35px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
+            font-size: 35px;
+        }
+
+        // Plain text in topbar
+        .navbar-text {
+            line-height: @navbarHeight;
+        }
+
+        .nav > li > a {
+            // Vertically center the text given @navbarHeight
+            @elementHeight: 35px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 1) 10px ((@navbarHeight - @elementHeight) / 2 + 1);
+            line-height: 35px;
+        }
+
+        .btn {
+            // Vertically center the button given @navbarHeight
+            @elementHeight: 28px;
+            margin: ((@navbarHeight - @elementHeight) / 2 - 1) 5px ((@navbarHeight - @elementHeight) / 2);
+        }
+
+        .btn-group {
+            // Vertically center the button given @navbarHeight
+            @elementHeight: 28px;
+            padding: ((@navbarHeight - @elementHeight) / 2 - 1) 5px ((@navbarHeight - @elementHeight) / 2);
+        }
+
+        .divider-vertical {
+            height: @navbarHeight;
+        }
+    }
+}
